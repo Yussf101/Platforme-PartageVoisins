@@ -118,8 +118,3 @@ npm run dev
 L'application est accessible sur `http://localhost:3000`.
 
 ---
-
-## Documentation
-
-Le rapport detaille de conception et d'implementation est disponible dans le fichier :
-* `ProjetEncadre_TarikAFTYS_YoussefFATIMI.pdf`
