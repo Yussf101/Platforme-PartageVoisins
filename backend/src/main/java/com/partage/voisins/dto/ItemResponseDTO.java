@@ -8,6 +8,7 @@ import lombok.Data;
 
 import java.math.BigDecimal;
 import java.util.UUID;
+import java.util.List;
 
 @Data
 @Builder
@@ -22,7 +23,11 @@ public class ItemResponseDTO {
     private ItemStatus status;
     private String categoryName;
     private UUID ownerId;
-    private String ownerName;
+    private String ownerFirstName;
+    private BigDecimal trustScore;
+    private List<String> ownerBadges;
+    private BigDecimal co2Saved;
+    private List<String> photoUrls;
     private Double latitude;
     private Double longitude;
 }

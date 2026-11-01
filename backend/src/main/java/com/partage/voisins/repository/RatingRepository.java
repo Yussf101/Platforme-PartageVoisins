@@ -9,5 +9,6 @@ import java.util.UUID;
 
 @Repository
 public interface RatingRepository extends JpaRepository<Rating, UUID> {
-    List<Rating> findByEvaluatedId(UUID evaluatedId);
+    List<Rating> findByEvaluatedIdOrderByCreatedAtDesc(UUID evaluatedId);
+    boolean existsByReservationIdAndEvaluatorId(UUID reservationId, UUID evaluatorId);
 }

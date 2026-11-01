@@ -11,4 +11,5 @@ public class ReservationRequestDTO {
     private UUID borrowerId;
     private LocalDateTime startDate;
     private LocalDateTime endDate;
+    private String initialMessage;
 }

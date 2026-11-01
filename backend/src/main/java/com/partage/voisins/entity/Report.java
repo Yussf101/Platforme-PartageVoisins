@@ -37,6 +37,11 @@ public class Report {
     @JoinColumn(name = "reservation_id")
     private Reservation reservation;
 
+    // Optionnel, si le signalement est lié à un objet
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "item_id")
+    private Item reportedItem;
+
     @Column(columnDefinition = "TEXT", nullable = false)
     private String reason;
 
